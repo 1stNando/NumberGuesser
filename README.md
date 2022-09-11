@@ -1,5 +1,7 @@
 # NumberGuesser
 
+/////Fernando: i used https://github.com/landoncass/NumberGuesser/blob/trunk/Program.cs as a reference code.
+
 In this project, you will use C# to recreate the favorite childrens game of "I'm thiking of a number between 1 and ...."
 
 In this game, the code will try to guess the number the player is thinking of. The computer will not ask the user for their number at the beginning of the game, but guess it.
