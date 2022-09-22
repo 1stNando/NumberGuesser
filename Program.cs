@@ -74,7 +74,7 @@ namespace NumberGuesser
         //Now lets create a method to display initial greeting and stat game
         static void ShowGreeting()
         {
-            Console.WriteLine("Welcome to the world's smartest number guessing computer!!!");
+            Console.WriteLine("Welcome to #the world's smartest number guessing computer!!!");
         }
         //brag when correct (the end of the game)
         static void BragWhenCorrect()
@@ -96,7 +96,7 @@ namespace NumberGuesser
             newGuess = (highNumber + lowNumber) / 2;
         }
 
-        //lets now define a prompt for a string to tell the user "hey is this your number..."
+        //lets now make a prompt for a string to tell the user "hey is this your number..."
         static string PromptForString()
         {
             Console.WriteLine($"Is your number {newGuess}? Answer higher, lower, or correct. ");
@@ -108,7 +108,7 @@ namespace NumberGuesser
         static void PlayAgain()
         {
             ShowGreeting();
-            Console.WriteLine("Think of a number greater than 1. And tell me a number higher than the number your thinking of. ");
+            Console.WriteLine("Think of a number greater than 1 but less than 10,000. Memorize it. It is your number. Then to begin the game first tell me another number that is way larger than your number. ");
 
             highNumber = Int32.Parse(Console.ReadLine());
             newGuess = (lowNumber + highNumber) / 2;
@@ -147,7 +147,9 @@ namespace NumberGuesser
             //Define what the list of guesses is exactly:
             var guessesList = new List<int>();
             int sumGuesses = 0;
-            Console.WriteLine("How about playing a game where I guess the number you are thinking of? Yes or no?");
+            Console.WriteLine("How about playing a number guessing game with me? Yes or no?");
+
+
             //Lets make a looping statement to run the game as long as user does not say NO.
             while (Console.ReadLine() != "no")
             {
